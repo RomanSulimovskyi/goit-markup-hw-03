@@ -31,7 +31,7 @@ ul {
 }
 
 .header-logo {
-  margin-right: 76px;
+  display: inline-flex;
   padding: 24px 0 24px 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -53,9 +53,9 @@ ul {
 }
 
 .header-nav {
-  display: flex;
-  margin: 0 332px 0 0;
-  padding: 0;
+  display: inline-flex;
+  padding: 24px 0;
+  margin: 0 0 0 76px;
   font-weight: 500;
   font-size: 18px;
   font-style: normal;
@@ -65,8 +65,11 @@ ul {
   text-decoration: inherit;
 }
 
+.header-list {
+  align-items: center;
+}
 .header-nav li:not(:last-child) {
-  margin-right: 40px;
+  padding: 0 40px 0 0;
 }
 
 .nav-link {
@@ -89,39 +92,34 @@ ul {
   font-style: inherit;
 }
 
-.adress-nav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.adress-nav li {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.adress-nav li:not(:last-child) {
-  margin-right: 40px;
-}
-
 .adress-link {
   color: var(--dark);
   text-decoration: inherit;
 }
+
 .adress-link:active {
   color: var(--pressed-state);
 }
 
-.wrap {
+.adress-nav {
+  padding: 24px 0;
+  margin: 0 0 0 332px;
+  margin-bottom: 0;
+}
+
+.adress-nav li {
+  display: inline-flex;
+}
+
+.adress-nav li:not(:last-child) {
+  padding: 0 40px 0 0;
+}
+
+.header-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .banner {
-  text-align: center;
-  padding: 188px 472px 0 472px;
   width: 1440px;
   height: 600px;
   left: 0px;
@@ -130,7 +128,6 @@ ul {
 }
 
 .banner-title {
-  margin: 0 0 48px 0;
   font-family: inherit;
   font-weight: 700;
   font-size: 56px;
@@ -139,7 +136,6 @@ ul {
 }
 
 .banner-button {
-  margin: auto;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -235,7 +231,7 @@ ul {
   color: var(--light);
 }
 
-/*portfolio*/
+/*portfolkio*/
 
 .filter-buttons {
   width: 69px;
@@ -292,40 +288,4 @@ ul {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--text);
-}
-
-.abut-item {
-  display: inline-flex;
-}
-
-.abut-item li:not(:last-child) {
-  margin-right: 24px;
-}
-
-.main-title {
-  text-align: center;
-  margin-bottom: 72px;
-}
-
-.main-title-list {
-  display: flex;
-}
-
-.main-title-list li:not(:last-child) {
-  margin-right: 24px;
-}
-
-.main-title-team {
-  display: flex;
-}
-
-.team-list {
-  text-align: center;
-  margin-right: 24px;
-}
-
-.footer-list {
-  width: 264px;
-  padding: 0;
-  margin: 0;
 }
