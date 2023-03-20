@@ -133,6 +133,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
 }
 
 .banner-title {
@@ -180,14 +181,34 @@ ul {
   background: var(--pressed-state);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.about-list {
+  margin-bottom: 120px;
 }
 
 .about-subtitle {
+  margin: 0 0 8px 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+}
+
+.about-item {
+  display: flex;
+  margin: 0;
+  padding: 0 156px 0;
+  margin-bottom: 120px;
+}
+.about-item li {
+  width: 264px;
+}
+
+.about-item li:not(:last-child) {
+  margin-right: 24px;
 }
 
 .about-text {
@@ -198,11 +219,48 @@ ul {
   color: var(--text);
 }
 
-.main-title {
+.work-list {
+  margin-bottom: 120px;
+}
+
+.work-title {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 72px 0;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
   color: var(--dark);
+}
+
+.work-content {
+  display: flex;
+  margin: 0;
+}
+
+.work-content li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.team-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  margin: 0 0 72px 0;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  padding: 0 156px 120px 156px;
+  margin: 0;
+}
+
+.team-list li:not(:last-child) {
+  margin-right: 24px;
+}
+.team-list li {
+  text-align: center;
 }
 
 .team-subtitle {
@@ -213,6 +271,10 @@ ul {
   color: var(--dark);
 }
 
+.subtitle-list {
+  margin-top: 32px;
+  padding: 0 16px 32px 16px;
+}
 .team-desc {
   font-weight: 400;
   font-size: 16px;
@@ -222,14 +284,23 @@ ul {
 }
 
 .banner-footer {
+  display: flex;
+  flex-direction: column;
   width: 1440px;
   height: 312px;
   left: 0px;
   top: 2280px;
   background: var(--dark);
 }
-
+.footer-list {
+  padding: 100px 1020px 100px 156px;
+}
+.footer-icon {
+  padding: 0;
+  margin-bottom: 16px;
+}
 .footer-desc {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
