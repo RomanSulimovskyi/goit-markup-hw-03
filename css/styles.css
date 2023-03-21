@@ -319,6 +319,9 @@ ul {
 
 /*portfolkio*/
 
+.portfolio-content {
+  border-bottom: 1px solid #e7e9fc;
+}
 .filter-buttons {
   width: 69px;
   height: 48px;
@@ -326,6 +329,17 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+}
+
+.portfolio-filters-list {
+  display: flex;
+  justify-content: center;
+  margin: 96px 427px 72px 427px;
+  padding: 0;
+}
+
+.portfolio-filters-list li:not(:last-child) {
+  margin-right: 24px;
 }
 
 .filter-buttons-list {
@@ -337,12 +351,15 @@ ul {
 }
 
 .button-app {
+  padding: 12px 24px;
+  margin: 0;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5px;
   letter-spacing: 0.04em;
+  background-color: var(--pressed-state);
   color: var(--white-background);
 }
 
@@ -356,7 +373,19 @@ ul {
   color: var(--primary-brand);
 }
 
+.buttom-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  margin: 0;
+}
+
+.filters {
+  margin-bottom: 72px;
+}
 .list-of-services {
+  margin: 0 0 8px 0;
+  padding: 30px 0 0 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -364,8 +393,9 @@ ul {
   color: var(--dark);
 }
 
-.list-description {
-  width: 75px;
+.app-text {
+  margin: 8px 0 0 0;
+  padding: 0 314px 32px 16px;
   height: 24px;
   font-family: 'Roboto';
   font-style: normal;
@@ -374,4 +404,86 @@ ul {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--text);
+}
+
+.marketing-text {
+  margin: 8px 0 0 0;
+  padding: 0 269px 32px 16px;
+  height: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.design-text {
+  margin: 8px 0 0 0;
+  padding: 0 293px 32px 16px;
+  height: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.web-text {
+  margin: 8px 0 0 0;
+  padding: 0 279px 32px 16px;
+  height: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.services-list-first {
+  display: flex;
+  padding: 0;
+  margin: 0 0 48px 0;
+}
+
+.services-list-first li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.services-list-second {
+  display: flex;
+  padding: 0;
+  margin: 0 0 48px 0;
+}
+
+.services-list-second li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.services-list-triple {
+  display: flex;
+  padding: 0;
+  margin: 0 0 121px 0;
+}
+.services-list-triple li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.text-border {
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.img-no-gap {
+  display: block;
+}
+
+.portfolio-footer-list {
+  padding: 99px 1030px 101px 146px;
 }
