@@ -153,6 +153,7 @@ ul {
   height: 56px;
   background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
   border-radius: 4px;
 }
 
